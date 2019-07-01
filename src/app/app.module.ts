@@ -25,8 +25,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     AppRoutingModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
-      { path: 'products/:productId', component: ProductDetailsComponent },
+      { path: '', component: ProductListComponent }, //if there is nothing to show it;ll show this (the homepage-product list)
+      { path: 'products/:productId', component: ProductDetailsComponent }, //it'll show this if clicked
     ])
   ],
   providers: [],
